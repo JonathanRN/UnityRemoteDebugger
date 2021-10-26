@@ -1,0 +1,13 @@
+{
+	"name": "com.jroynoel.remotedebugger",
+	"version": "1.0.0",
+	"displayName": "Remote Debugger",
+	"description": "A remote debugging tool for devices that are hard to debug.",
+	"unity": "2020.3",
+	"dependencies": {},
+	"author": {
+		"name": "Jonathan Roy-Noel",
+		"email": "jonathan.roynoel@gmail.com",
+		"url": "https://www.github.com/jonathanrn"
+	}
+}
