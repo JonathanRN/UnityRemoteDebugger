@@ -1,0 +1,34 @@
+syntax = "proto3";
+package remotedebugger;
+
+import "google/protobuf/timestamp.proto";
+
+message Hierarchy {
+	google.protobuf.Timestamp timestamp = 1;
+	repeated GameObj gameObjects = 2;
+
+	message GameObj {
+		int32 index = 1;
+		string name = 2;
+		Transfo transform = 3;
+		repeated Compo components = 4;
+		repeated GameObj children = 5;
+
+		message Compo {
+			int32 index = 1;
+			string name = 2;
+		}
+
+		message Transfo {
+			Vector position = 1;
+			Vector rotation = 2;
+			Vector scale = 3;
+
+			message Vector {
+				float x = 1;
+				float y = 2;
+				float z = 3;
+			}
+		}
+	}
+}

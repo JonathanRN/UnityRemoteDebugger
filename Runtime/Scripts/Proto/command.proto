@@ -1,0 +1,15 @@
+syntax = "proto3";
+package remotedebugger;
+
+import "google/protobuf/timestamp.proto";
+
+message Command {
+	google.protobuf.Timestamp timestamp = 1;
+	CommandType commandType = 2;
+
+	enum CommandType {
+		HIERARCHY = 0;
+		ADD = 1;
+		DELETE = 2;
+	}
+}

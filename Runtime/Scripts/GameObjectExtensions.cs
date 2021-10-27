@@ -1,3 +1,4 @@
+using Remotedebugger;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -39,7 +40,7 @@ public static class GameObjectExtensions
         return objectsInScene.ToArray();
     }
 
-    public static GameObject[] GetChildren(GameObject gameObject)
+    public static GameObject[] GetChildren(this GameObject gameObject)
 	{
         List<GameObject> children = new List<GameObject>();
 		for (int i = 0; i < gameObject.transform.childCount; i++)
