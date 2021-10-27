@@ -25,25 +25,25 @@ namespace Remotedebugger {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cg9oaWVyYXJjaHkucHJvdG8SDnJlbW90ZWRlYnVnZ2VyGh9nb29nbGUvcHJv",
-            "dG9idWYvdGltZXN0YW1wLnByb3RvIvEECglIaWVyYXJjaHkSLQoJdGltZXN0",
+            "dG9idWYvdGltZXN0YW1wLnByb3RvIoIFCglIaWVyYXJjaHkSLQoJdGltZXN0",
             "YW1wGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBI2CgtnYW1l",
             "T2JqZWN0cxgCIAMoCzIhLnJlbW90ZWRlYnVnZ2VyLkhpZXJhcmNoeS5HYW1l",
-            "T2JqGvwDCgdHYW1lT2JqEg0KBWluZGV4GAEgASgFEgwKBG5hbWUYAiABKAkS",
-            "PAoJdHJhbnNmb3JtGAMgASgLMikucmVtb3RlZGVidWdnZXIuSGllcmFyY2h5",
-            "LkdhbWVPYmouVHJhbnNmbxI7Cgpjb21wb25lbnRzGAQgAygLMicucmVtb3Rl",
-            "ZGVidWdnZXIuSGllcmFyY2h5LkdhbWVPYmouQ29tcG8SMwoIY2hpbGRyZW4Y",
-            "BSADKAsyIS5yZW1vdGVkZWJ1Z2dlci5IaWVyYXJjaHkuR2FtZU9iahokCgVD",
-            "b21wbxINCgVpbmRleBgBIAEoBRIMCgRuYW1lGAIgASgJGv0BCgdUcmFuc2Zv",
-            "EkIKCHBvc2l0aW9uGAEgASgLMjAucmVtb3RlZGVidWdnZXIuSGllcmFyY2h5",
-            "LkdhbWVPYmouVHJhbnNmby5WZWN0b3ISQgoIcm90YXRpb24YAiABKAsyMC5y",
-            "ZW1vdGVkZWJ1Z2dlci5IaWVyYXJjaHkuR2FtZU9iai5UcmFuc2ZvLlZlY3Rv",
-            "chI/CgVzY2FsZRgDIAEoCzIwLnJlbW90ZWRlYnVnZ2VyLkhpZXJhcmNoeS5H",
-            "YW1lT2JqLlRyYW5zZm8uVmVjdG9yGikKBlZlY3RvchIJCgF4GAEgASgCEgkK",
-            "AXkYAiABKAISCQoBehgDIAEoAmIGcHJvdG8z"));
+            "T2JqGo0ECgdHYW1lT2JqEg8KB2VuYWJsZWQYASABKAgSDQoFaW5kZXgYAiAB",
+            "KAUSDAoEbmFtZRgDIAEoCRI8Cgl0cmFuc2Zvcm0YBCABKAsyKS5yZW1vdGVk",
+            "ZWJ1Z2dlci5IaWVyYXJjaHkuR2FtZU9iai5UcmFuc2ZvEjsKCmNvbXBvbmVu",
+            "dHMYBSADKAsyJy5yZW1vdGVkZWJ1Z2dlci5IaWVyYXJjaHkuR2FtZU9iai5D",
+            "b21wbxIzCghjaGlsZHJlbhgGIAMoCzIhLnJlbW90ZWRlYnVnZ2VyLkhpZXJh",
+            "cmNoeS5HYW1lT2JqGiQKBUNvbXBvEg0KBWluZGV4GAEgASgFEgwKBG5hbWUY",
+            "AiABKAka/QEKB1RyYW5zZm8SQgoIcG9zaXRpb24YASABKAsyMC5yZW1vdGVk",
+            "ZWJ1Z2dlci5IaWVyYXJjaHkuR2FtZU9iai5UcmFuc2ZvLlZlY3RvchJCCghy",
+            "b3RhdGlvbhgCIAEoCzIwLnJlbW90ZWRlYnVnZ2VyLkhpZXJhcmNoeS5HYW1l",
+            "T2JqLlRyYW5zZm8uVmVjdG9yEj8KBXNjYWxlGAMgASgLMjAucmVtb3RlZGVi",
+            "dWdnZXIuSGllcmFyY2h5LkdhbWVPYmouVHJhbnNmby5WZWN0b3IaKQoGVmVj",
+            "dG9yEgkKAXgYASABKAISCQoBeRgCIAEoAhIJCgF6GAMgASgCYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Remotedebugger.Hierarchy), global::Remotedebugger.Hierarchy.Parser, new[]{ "Timestamp", "GameObjects" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Remotedebugger.Hierarchy.Types.GameObj), global::Remotedebugger.Hierarchy.Types.GameObj.Parser, new[]{ "Index", "Name", "Transform", "Components", "Children" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo), global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo.Parser, new[]{ "Index", "Name" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Remotedebugger.Hierarchy), global::Remotedebugger.Hierarchy.Parser, new[]{ "Timestamp", "GameObjects" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Remotedebugger.Hierarchy.Types.GameObj), global::Remotedebugger.Hierarchy.Types.GameObj.Parser, new[]{ "Enabled", "Index", "Name", "Transform", "Components", "Children" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo), global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo.Parser, new[]{ "Index", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo), global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Parser, new[]{ "Position", "Rotation", "Scale" }, null, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector), global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector.Parser, new[]{ "X", "Y", "Z" }, null, null, null, null)})})})
           }));
     }
@@ -51,31 +51,23 @@ namespace Remotedebugger {
 
   }
   #region Messages
-  public sealed partial class Hierarchy : pb::IMessage<Hierarchy>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
+  public sealed partial class Hierarchy : pb::IMessage<Hierarchy> {
     private static readonly pb::MessageParser<Hierarchy> _parser = new pb::MessageParser<Hierarchy>(() => new Hierarchy());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Hierarchy> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Remotedebugger.HierarchyReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Hierarchy() {
       OnConstruction();
     }
@@ -83,7 +75,6 @@ namespace Remotedebugger {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Hierarchy(Hierarchy other) : this() {
       timestamp_ = other.timestamp_ != null ? other.timestamp_.Clone() : null;
       gameObjects_ = other.gameObjects_.Clone();
@@ -91,7 +82,6 @@ namespace Remotedebugger {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Hierarchy Clone() {
       return new Hierarchy(this);
     }
@@ -100,7 +90,6 @@ namespace Remotedebugger {
     public const int TimestampFieldNumber = 1;
     private global::Google.Protobuf.WellKnownTypes.Timestamp timestamp_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Google.Protobuf.WellKnownTypes.Timestamp Timestamp {
       get { return timestamp_; }
       set {
@@ -114,19 +103,16 @@ namespace Remotedebugger {
         = pb::FieldCodec.ForMessage(18, global::Remotedebugger.Hierarchy.Types.GameObj.Parser);
     private readonly pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj> gameObjects_ = new pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj>();
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj> GameObjects {
       get { return gameObjects_; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Hierarchy);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Hierarchy other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -140,7 +126,6 @@ namespace Remotedebugger {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (timestamp_ != null) hash ^= Timestamp.GetHashCode();
@@ -152,17 +137,12 @@ namespace Remotedebugger {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
       if (timestamp_ != null) {
         output.WriteRawTag(10);
         output.WriteMessage(Timestamp);
@@ -171,26 +151,9 @@ namespace Remotedebugger {
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
-    #endif
     }
 
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (timestamp_ != null) {
-        output.WriteRawTag(10);
-        output.WriteMessage(Timestamp);
-      }
-      gameObjects_.WriteTo(ref output, _repeated_gameObjects_codec);
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (timestamp_ != null) {
@@ -204,7 +167,6 @@ namespace Remotedebugger {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Hierarchy other) {
       if (other == null) {
         return;
@@ -220,11 +182,7 @@ namespace Remotedebugger {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
         switch(tag) {
@@ -244,65 +202,29 @@ namespace Remotedebugger {
           }
         }
       }
-    #endif
     }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 10: {
-            if (timestamp_ == null) {
-              Timestamp = new global::Google.Protobuf.WellKnownTypes.Timestamp();
-            }
-            input.ReadMessage(Timestamp);
-            break;
-          }
-          case 18: {
-            gameObjects_.AddEntriesFrom(ref input, _repeated_gameObjects_codec);
-            break;
-          }
-        }
-      }
-    }
-    #endif
 
     #region Nested types
     /// <summary>Container for nested types declared in the Hierarchy message type.</summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static partial class Types {
-      public sealed partial class GameObj : pb::IMessage<GameObj>
-      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          , pb::IBufferMessage
-      #endif
-      {
+      public sealed partial class GameObj : pb::IMessage<GameObj> {
         private static readonly pb::MessageParser<GameObj> _parser = new pb::MessageParser<GameObj>(() => new GameObj());
         private pb::UnknownFieldSet _unknownFields;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pb::MessageParser<GameObj> Parser { get { return _parser; } }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
           get { return global::Remotedebugger.Hierarchy.Descriptor.NestedTypes[0]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         pbr::MessageDescriptor pb::IMessage.Descriptor {
           get { return Descriptor; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public GameObj() {
           OnConstruction();
         }
@@ -310,8 +232,8 @@ namespace Remotedebugger {
         partial void OnConstruction();
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public GameObj(GameObj other) : this() {
+          enabled_ = other.enabled_;
           index_ = other.index_;
           name_ = other.name_;
           transform_ = other.transform_ != null ? other.transform_.Clone() : null;
@@ -321,16 +243,25 @@ namespace Remotedebugger {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public GameObj Clone() {
           return new GameObj(this);
         }
 
+        /// <summary>Field number for the "enabled" field.</summary>
+        public const int EnabledFieldNumber = 1;
+        private bool enabled_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Enabled {
+          get { return enabled_; }
+          set {
+            enabled_ = value;
+          }
+        }
+
         /// <summary>Field number for the "index" field.</summary>
-        public const int IndexFieldNumber = 1;
+        public const int IndexFieldNumber = 2;
         private int index_;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int Index {
           get { return index_; }
           set {
@@ -339,10 +270,9 @@ namespace Remotedebugger {
         }
 
         /// <summary>Field number for the "name" field.</summary>
-        public const int NameFieldNumber = 2;
+        public const int NameFieldNumber = 3;
         private string name_ = "";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public string Name {
           get { return name_; }
           set {
@@ -351,10 +281,9 @@ namespace Remotedebugger {
         }
 
         /// <summary>Field number for the "transform" field.</summary>
-        public const int TransformFieldNumber = 3;
+        public const int TransformFieldNumber = 4;
         private global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo transform_;
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo Transform {
           get { return transform_; }
           set {
@@ -363,35 +292,31 @@ namespace Remotedebugger {
         }
 
         /// <summary>Field number for the "components" field.</summary>
-        public const int ComponentsFieldNumber = 4;
+        public const int ComponentsFieldNumber = 5;
         private static readonly pb::FieldCodec<global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo> _repeated_components_codec
-            = pb::FieldCodec.ForMessage(34, global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo.Parser);
+            = pb::FieldCodec.ForMessage(42, global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo.Parser);
         private readonly pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo> components_ = new pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo>();
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj.Types.Compo> Components {
           get { return components_; }
         }
 
         /// <summary>Field number for the "children" field.</summary>
-        public const int ChildrenFieldNumber = 5;
+        public const int ChildrenFieldNumber = 6;
         private static readonly pb::FieldCodec<global::Remotedebugger.Hierarchy.Types.GameObj> _repeated_children_codec
-            = pb::FieldCodec.ForMessage(42, global::Remotedebugger.Hierarchy.Types.GameObj.Parser);
+            = pb::FieldCodec.ForMessage(50, global::Remotedebugger.Hierarchy.Types.GameObj.Parser);
         private readonly pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj> children_ = new pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj>();
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public pbc::RepeatedField<global::Remotedebugger.Hierarchy.Types.GameObj> Children {
           get { return children_; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
           return Equals(other as GameObj);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public bool Equals(GameObj other) {
           if (ReferenceEquals(other, null)) {
             return false;
@@ -399,6 +324,7 @@ namespace Remotedebugger {
           if (ReferenceEquals(other, this)) {
             return true;
           }
+          if (Enabled != other.Enabled) return false;
           if (Index != other.Index) return false;
           if (Name != other.Name) return false;
           if (!object.Equals(Transform, other.Transform)) return false;
@@ -408,9 +334,9 @@ namespace Remotedebugger {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override int GetHashCode() {
           int hash = 1;
+          if (Enabled != false) hash ^= Enabled.GetHashCode();
           if (Index != 0) hash ^= Index.GetHashCode();
           if (Name.Length != 0) hash ^= Name.GetHashCode();
           if (transform_ != null) hash ^= Transform.GetHashCode();
@@ -423,27 +349,26 @@ namespace Remotedebugger {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override string ToString() {
           return pb::JsonFormatter.ToDiagnosticString(this);
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void WriteTo(pb::CodedOutputStream output) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          output.WriteRawMessage(this);
-        #else
-          if (Index != 0) {
+          if (Enabled != false) {
             output.WriteRawTag(8);
+            output.WriteBool(Enabled);
+          }
+          if (Index != 0) {
+            output.WriteRawTag(16);
             output.WriteInt32(Index);
           }
           if (Name.Length != 0) {
-            output.WriteRawTag(18);
+            output.WriteRawTag(26);
             output.WriteString(Name);
           }
           if (transform_ != null) {
-            output.WriteRawTag(26);
+            output.WriteRawTag(34);
             output.WriteMessage(Transform);
           }
           components_.WriteTo(output, _repeated_components_codec);
@@ -451,37 +376,14 @@ namespace Remotedebugger {
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
-        #endif
         }
 
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-          if (Index != 0) {
-            output.WriteRawTag(8);
-            output.WriteInt32(Index);
-          }
-          if (Name.Length != 0) {
-            output.WriteRawTag(18);
-            output.WriteString(Name);
-          }
-          if (transform_ != null) {
-            output.WriteRawTag(26);
-            output.WriteMessage(Transform);
-          }
-          components_.WriteTo(ref output, _repeated_components_codec);
-          children_.WriteTo(ref output, _repeated_children_codec);
-          if (_unknownFields != null) {
-            _unknownFields.WriteTo(ref output);
-          }
-        }
-        #endif
-
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public int CalculateSize() {
           int size = 0;
+          if (Enabled != false) {
+            size += 1 + 1;
+          }
           if (Index != 0) {
             size += 1 + pb::CodedOutputStream.ComputeInt32Size(Index);
           }
@@ -500,10 +402,12 @@ namespace Remotedebugger {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(GameObj other) {
           if (other == null) {
             return;
+          }
+          if (other.Enabled != false) {
+            Enabled = other.Enabled;
           }
           if (other.Index != 0) {
             Index = other.Index;
@@ -523,11 +427,7 @@ namespace Remotedebugger {
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public void MergeFrom(pb::CodedInputStream input) {
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-          input.ReadRawMessage(this);
-        #else
           uint tag;
           while ((tag = input.ReadTag()) != 0) {
             switch(tag) {
@@ -535,101 +435,57 @@ namespace Remotedebugger {
                 _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
                 break;
               case 8: {
+                Enabled = input.ReadBool();
+                break;
+              }
+              case 16: {
                 Index = input.ReadInt32();
                 break;
               }
-              case 18: {
+              case 26: {
                 Name = input.ReadString();
                 break;
               }
-              case 26: {
+              case 34: {
                 if (transform_ == null) {
                   Transform = new global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo();
                 }
                 input.ReadMessage(Transform);
                 break;
               }
-              case 34: {
+              case 42: {
                 components_.AddEntriesFrom(input, _repeated_components_codec);
                 break;
               }
-              case 42: {
+              case 50: {
                 children_.AddEntriesFrom(input, _repeated_children_codec);
                 break;
               }
             }
           }
-        #endif
         }
-
-        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-          uint tag;
-          while ((tag = input.ReadTag()) != 0) {
-            switch(tag) {
-              default:
-                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                break;
-              case 8: {
-                Index = input.ReadInt32();
-                break;
-              }
-              case 18: {
-                Name = input.ReadString();
-                break;
-              }
-              case 26: {
-                if (transform_ == null) {
-                  Transform = new global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo();
-                }
-                input.ReadMessage(Transform);
-                break;
-              }
-              case 34: {
-                components_.AddEntriesFrom(ref input, _repeated_components_codec);
-                break;
-              }
-              case 42: {
-                children_.AddEntriesFrom(ref input, _repeated_children_codec);
-                break;
-              }
-            }
-          }
-        }
-        #endif
 
         #region Nested types
         /// <summary>Container for nested types declared in the GameObj message type.</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static partial class Types {
-          public sealed partial class Compo : pb::IMessage<Compo>
-          #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-              , pb::IBufferMessage
-          #endif
-          {
+          public sealed partial class Compo : pb::IMessage<Compo> {
             private static readonly pb::MessageParser<Compo> _parser = new pb::MessageParser<Compo>(() => new Compo());
             private pb::UnknownFieldSet _unknownFields;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public static pb::MessageParser<Compo> Parser { get { return _parser; } }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public static pbr::MessageDescriptor Descriptor {
               get { return global::Remotedebugger.Hierarchy.Types.GameObj.Descriptor.NestedTypes[0]; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             pbr::MessageDescriptor pb::IMessage.Descriptor {
               get { return Descriptor; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public Compo() {
               OnConstruction();
             }
@@ -637,7 +493,6 @@ namespace Remotedebugger {
             partial void OnConstruction();
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public Compo(Compo other) : this() {
               index_ = other.index_;
               name_ = other.name_;
@@ -645,7 +500,6 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public Compo Clone() {
               return new Compo(this);
             }
@@ -654,7 +508,6 @@ namespace Remotedebugger {
             public const int IndexFieldNumber = 1;
             private int index_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public int Index {
               get { return index_; }
               set {
@@ -666,7 +519,6 @@ namespace Remotedebugger {
             public const int NameFieldNumber = 2;
             private string name_ = "";
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public string Name {
               get { return name_; }
               set {
@@ -675,13 +527,11 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public override bool Equals(object other) {
               return Equals(other as Compo);
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public bool Equals(Compo other) {
               if (ReferenceEquals(other, null)) {
                 return false;
@@ -695,7 +545,6 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public override int GetHashCode() {
               int hash = 1;
               if (Index != 0) hash ^= Index.GetHashCode();
@@ -707,17 +556,12 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public override string ToString() {
               return pb::JsonFormatter.ToDiagnosticString(this);
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public void WriteTo(pb::CodedOutputStream output) {
-            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-              output.WriteRawMessage(this);
-            #else
               if (Index != 0) {
                 output.WriteRawTag(8);
                 output.WriteInt32(Index);
@@ -729,29 +573,9 @@ namespace Remotedebugger {
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(output);
               }
-            #endif
             }
 
-            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-            void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-              if (Index != 0) {
-                output.WriteRawTag(8);
-                output.WriteInt32(Index);
-              }
-              if (Name.Length != 0) {
-                output.WriteRawTag(18);
-                output.WriteString(Name);
-              }
-              if (_unknownFields != null) {
-                _unknownFields.WriteTo(ref output);
-              }
-            }
-            #endif
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public int CalculateSize() {
               int size = 0;
               if (Index != 0) {
@@ -767,7 +591,6 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public void MergeFrom(Compo other) {
               if (other == null) {
                 return;
@@ -782,11 +605,7 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public void MergeFrom(pb::CodedInputStream input) {
-            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-              input.ReadRawMessage(this);
-            #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
                 switch(tag) {
@@ -803,59 +622,27 @@ namespace Remotedebugger {
                   }
                 }
               }
-            #endif
             }
-
-            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-            void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-              uint tag;
-              while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
-                  default:
-                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                    break;
-                  case 8: {
-                    Index = input.ReadInt32();
-                    break;
-                  }
-                  case 18: {
-                    Name = input.ReadString();
-                    break;
-                  }
-                }
-              }
-            }
-            #endif
 
           }
 
-          public sealed partial class Transfo : pb::IMessage<Transfo>
-          #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-              , pb::IBufferMessage
-          #endif
-          {
+          public sealed partial class Transfo : pb::IMessage<Transfo> {
             private static readonly pb::MessageParser<Transfo> _parser = new pb::MessageParser<Transfo>(() => new Transfo());
             private pb::UnknownFieldSet _unknownFields;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public static pb::MessageParser<Transfo> Parser { get { return _parser; } }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public static pbr::MessageDescriptor Descriptor {
               get { return global::Remotedebugger.Hierarchy.Types.GameObj.Descriptor.NestedTypes[1]; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             pbr::MessageDescriptor pb::IMessage.Descriptor {
               get { return Descriptor; }
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public Transfo() {
               OnConstruction();
             }
@@ -863,7 +650,6 @@ namespace Remotedebugger {
             partial void OnConstruction();
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public Transfo(Transfo other) : this() {
               position_ = other.position_ != null ? other.position_.Clone() : null;
               rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
@@ -872,7 +658,6 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public Transfo Clone() {
               return new Transfo(this);
             }
@@ -881,7 +666,6 @@ namespace Remotedebugger {
             public const int PositionFieldNumber = 1;
             private global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector position_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector Position {
               get { return position_; }
               set {
@@ -893,7 +677,6 @@ namespace Remotedebugger {
             public const int RotationFieldNumber = 2;
             private global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector rotation_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector Rotation {
               get { return rotation_; }
               set {
@@ -905,7 +688,6 @@ namespace Remotedebugger {
             public const int ScaleFieldNumber = 3;
             private global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector scale_;
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector Scale {
               get { return scale_; }
               set {
@@ -914,13 +696,11 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public override bool Equals(object other) {
               return Equals(other as Transfo);
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public bool Equals(Transfo other) {
               if (ReferenceEquals(other, null)) {
                 return false;
@@ -935,7 +715,6 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public override int GetHashCode() {
               int hash = 1;
               if (position_ != null) hash ^= Position.GetHashCode();
@@ -948,17 +727,12 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public override string ToString() {
               return pb::JsonFormatter.ToDiagnosticString(this);
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public void WriteTo(pb::CodedOutputStream output) {
-            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-              output.WriteRawMessage(this);
-            #else
               if (position_ != null) {
                 output.WriteRawTag(10);
                 output.WriteMessage(Position);
@@ -974,33 +748,9 @@ namespace Remotedebugger {
               if (_unknownFields != null) {
                 _unknownFields.WriteTo(output);
               }
-            #endif
             }
 
-            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-            void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-              if (position_ != null) {
-                output.WriteRawTag(10);
-                output.WriteMessage(Position);
-              }
-              if (rotation_ != null) {
-                output.WriteRawTag(18);
-                output.WriteMessage(Rotation);
-              }
-              if (scale_ != null) {
-                output.WriteRawTag(26);
-                output.WriteMessage(Scale);
-              }
-              if (_unknownFields != null) {
-                _unknownFields.WriteTo(ref output);
-              }
-            }
-            #endif
-
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public int CalculateSize() {
               int size = 0;
               if (position_ != null) {
@@ -1019,7 +769,6 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public void MergeFrom(Transfo other) {
               if (other == null) {
                 return;
@@ -1046,11 +795,7 @@ namespace Remotedebugger {
             }
 
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public void MergeFrom(pb::CodedInputStream input) {
-            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-              input.ReadRawMessage(this);
-            #else
               uint tag;
               while ((tag = input.ReadTag()) != 0) {
                 switch(tag) {
@@ -1080,75 +825,29 @@ namespace Remotedebugger {
                   }
                 }
               }
-            #endif
             }
-
-            #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-            void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-              uint tag;
-              while ((tag = input.ReadTag()) != 0) {
-                switch(tag) {
-                  default:
-                    _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                    break;
-                  case 10: {
-                    if (position_ == null) {
-                      Position = new global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector();
-                    }
-                    input.ReadMessage(Position);
-                    break;
-                  }
-                  case 18: {
-                    if (rotation_ == null) {
-                      Rotation = new global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector();
-                    }
-                    input.ReadMessage(Rotation);
-                    break;
-                  }
-                  case 26: {
-                    if (scale_ == null) {
-                      Scale = new global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Types.Vector();
-                    }
-                    input.ReadMessage(Scale);
-                    break;
-                  }
-                }
-              }
-            }
-            #endif
 
             #region Nested types
             /// <summary>Container for nested types declared in the Transfo message type.</summary>
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-            [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
             public static partial class Types {
-              public sealed partial class Vector : pb::IMessage<Vector>
-              #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-                  , pb::IBufferMessage
-              #endif
-              {
+              public sealed partial class Vector : pb::IMessage<Vector> {
                 private static readonly pb::MessageParser<Vector> _parser = new pb::MessageParser<Vector>(() => new Vector());
                 private pb::UnknownFieldSet _unknownFields;
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public static pb::MessageParser<Vector> Parser { get { return _parser; } }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public static pbr::MessageDescriptor Descriptor {
                   get { return global::Remotedebugger.Hierarchy.Types.GameObj.Types.Transfo.Descriptor.NestedTypes[0]; }
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 pbr::MessageDescriptor pb::IMessage.Descriptor {
                   get { return Descriptor; }
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public Vector() {
                   OnConstruction();
                 }
@@ -1156,7 +855,6 @@ namespace Remotedebugger {
                 partial void OnConstruction();
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public Vector(Vector other) : this() {
                   x_ = other.x_;
                   y_ = other.y_;
@@ -1165,7 +863,6 @@ namespace Remotedebugger {
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public Vector Clone() {
                   return new Vector(this);
                 }
@@ -1174,7 +871,6 @@ namespace Remotedebugger {
                 public const int XFieldNumber = 1;
                 private float x_;
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public float X {
                   get { return x_; }
                   set {
@@ -1186,7 +882,6 @@ namespace Remotedebugger {
                 public const int YFieldNumber = 2;
                 private float y_;
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public float Y {
                   get { return y_; }
                   set {
@@ -1198,7 +893,6 @@ namespace Remotedebugger {
                 public const int ZFieldNumber = 3;
                 private float z_;
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public float Z {
                   get { return z_; }
                   set {
@@ -1207,13 +901,11 @@ namespace Remotedebugger {
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public override bool Equals(object other) {
                   return Equals(other as Vector);
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public bool Equals(Vector other) {
                   if (ReferenceEquals(other, null)) {
                     return false;
@@ -1228,7 +920,6 @@ namespace Remotedebugger {
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public override int GetHashCode() {
                   int hash = 1;
                   if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
@@ -1241,17 +932,12 @@ namespace Remotedebugger {
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public override string ToString() {
                   return pb::JsonFormatter.ToDiagnosticString(this);
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public void WriteTo(pb::CodedOutputStream output) {
-                #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-                  output.WriteRawMessage(this);
-                #else
                   if (X != 0F) {
                     output.WriteRawTag(13);
                     output.WriteFloat(X);
@@ -1267,33 +953,9 @@ namespace Remotedebugger {
                   if (_unknownFields != null) {
                     _unknownFields.WriteTo(output);
                   }
-                #endif
                 }
 
-                #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-                void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-                  if (X != 0F) {
-                    output.WriteRawTag(13);
-                    output.WriteFloat(X);
-                  }
-                  if (Y != 0F) {
-                    output.WriteRawTag(21);
-                    output.WriteFloat(Y);
-                  }
-                  if (Z != 0F) {
-                    output.WriteRawTag(29);
-                    output.WriteFloat(Z);
-                  }
-                  if (_unknownFields != null) {
-                    _unknownFields.WriteTo(ref output);
-                  }
-                }
-                #endif
-
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public int CalculateSize() {
                   int size = 0;
                   if (X != 0F) {
@@ -1312,7 +974,6 @@ namespace Remotedebugger {
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public void MergeFrom(Vector other) {
                   if (other == null) {
                     return;
@@ -1330,11 +991,7 @@ namespace Remotedebugger {
                 }
 
                 [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
                 public void MergeFrom(pb::CodedInputStream input) {
-                #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-                  input.ReadRawMessage(this);
-                #else
                   uint tag;
                   while ((tag = input.ReadTag()) != 0) {
                     switch(tag) {
@@ -1355,35 +1012,7 @@ namespace Remotedebugger {
                       }
                     }
                   }
-                #endif
                 }
-
-                #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-                [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-                [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-                void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-                  uint tag;
-                  while ((tag = input.ReadTag()) != 0) {
-                    switch(tag) {
-                      default:
-                        _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-                        break;
-                      case 13: {
-                        X = input.ReadFloat();
-                        break;
-                      }
-                      case 21: {
-                        Y = input.ReadFloat();
-                        break;
-                      }
-                      case 29: {
-                        Z = input.ReadFloat();
-                        break;
-                      }
-                    }
-                  }
-                }
-                #endif
 
               }
 

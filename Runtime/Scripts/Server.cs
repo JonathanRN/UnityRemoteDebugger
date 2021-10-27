@@ -4,25 +4,23 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Google.Protobuf;
 
 public class Server
 {
+#if !UNITY_EDITOR
 	[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
 	public static void RuntimeInitialize()
 	{
 		// Start the listener after the scene loads
-		if (!SceneManager.GetActiveScene().name.Equals("RemoteDebugger"))
-		{
-			new Server();
-		}
+		new Server();
 	}
+#endif
 
 	private readonly TcpListener tcpListener;
 	private TcpClient client;
 	private NetworkStream stream;
-	private const int PORT = 5555;
+	public const int PORT = 5555;
 
 	public Server()
 	{
@@ -48,14 +46,17 @@ public class Server
 		Receive();
 	}
 
-	private async void Receive()
+	private void Receive()
 	{
-		while (stream != null)
+		Task.Run(async () =>
 		{
-			Command command = Command.Parser.ParseDelimitedFrom(stream);
-			ParseCommand(command);
-			await Task.Delay(500);
-		}
+			while (stream != null)
+			{
+				Command command = Command.Parser.ParseDelimitedFrom(stream);
+				ParseCommand(command);
+				await Task.Delay(500);
+			}
+		});
 	}
 
 	private void ParseCommand(Command command)
@@ -76,7 +77,7 @@ public class Server
 		}
 	}
 
-	private IPAddress GetLocalIPAddress()
+	public static IPAddress GetLocalIPAddress()
 	{
 		return Dns.GetHostEntry(Dns.GetHostName()).AddressList.First(x => x.AddressFamily == AddressFamily.InterNetwork);
 	}

@@ -1,7 +1,9 @@
 {
     "name": "UnityRemoteDebuggerEditor",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:28a7194253b5b6940be2f6e73eb270d6"
+    ],
     "includePlatforms": [
         "Editor"
     ],

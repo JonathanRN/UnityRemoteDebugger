@@ -3,8 +3,6 @@ using UnityEngine;
 using Google.Protobuf;
 using Remotedebugger;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Collections;
 
 public class RemoteDebugger : MonoBehaviour
 {
@@ -54,12 +52,23 @@ public class RemoteDebugger : MonoBehaviour
 		foreach (var gameObj in response.GameObjects)
 		{
 			GameObject gameObject = new GameObject(gameObj.Name);
+			gameObject.SetActive(gameObj.Enabled);
 			gameObject.transform.ApplyTransforms(gameObj.Transform);
-			// todo add list of components
 
 			hierarchy.Add(gameObject);
+
+			foreach (var child in gameObj.Children)
+			{
+				GameObject childObject = new GameObject(child.Name);
+				childObject.SetActive(child.Enabled);
+				childObject.transform.SetParent(gameObject.transform);
+				childObject.transform.ApplyTransforms(child.Transform);
+
+				hierarchy.Add(childObject);
+			}
+
+			// todo list components
 		}
-		Debug.Log("REPONSE!! " + response.Timestamp);
 	}
 
 	public void Disconnect()

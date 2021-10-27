@@ -1,5 +1,6 @@
 using Remotedebugger;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static Remotedebugger.Hierarchy.Types;
 using static Remotedebugger.Hierarchy.Types.GameObj.Types;
@@ -8,21 +9,21 @@ public static class HierarchyExtensions
 {
 	public static void GetHierarchy(this Hierarchy hierarchy)
 	{
-		GameObject[] all = GameObjectExtensions.FindAllObjectsInScene();
-		for (int i = 0; i < all.Length; i++)
+		UnityEngine.SceneManagement.Scene activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+		GameObject[] rootObjects = activeScene.GetRootGameObjects().OrderBy(x => x.transform.GetSiblingIndex()).ToArray();
+		//GameObject[] rootObjects = Object.FindObjectsOfType<GameObject>(true).OrderBy(x => x.transform.GetSiblingIndex()).ToArray();
+
+		for (int i = 0; i < rootObjects.Length; i++)
 		{
-			GameObj gameObj = NewGameObj(i, all[i]);
+			//Debug.Log(rootObjects[i].transform.);
+			GameObj gameObj = NewGameObj(i, rootObjects[i]);
 
-			// Also loop through their sub children
-			GameObject[] children = all[i].GetChildren();
-			for (int j = 0; j < children.Length; j++)
-			{
-				GameObj child = NewGameObj(j, children[j]);
-				gameObj.Children.Add(child);
-
-				// TODO, MAKE RECURSIVE???
-			}
-
+			// Loop through all sub children
+			//for (int j = 0; j < rootObjects[i].transform.childCount; j++)
+			//{
+			//	GameObj child = NewGameObj(j, rootObjects[i].transform.GetChild(j).gameObject);
+			//	gameObj.Children.Add(child);
+			//}
 			hierarchy.GameObjects.Add(gameObj);
 		}
 	}
@@ -31,6 +32,7 @@ public static class HierarchyExtensions
 	{
 		GameObj gameObj = new GameObj
 		{
+			Enabled = gameObject.activeSelf,
 			Index = index,
 			Name = gameObject.name,
 			Transform = GetTransform(gameObject.transform)

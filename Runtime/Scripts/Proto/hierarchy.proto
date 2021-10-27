@@ -8,11 +8,12 @@ message Hierarchy {
 	repeated GameObj gameObjects = 2;
 
 	message GameObj {
-		int32 index = 1;
-		string name = 2;
-		Transfo transform = 3;
-		repeated Compo components = 4;
-		repeated GameObj children = 5;
+		bool enabled = 1;
+		int32 index = 2;
+		string name = 3;
+		Transfo transform = 4;
+		repeated Compo components = 5;
+		repeated GameObj children = 6;
 
 		message Compo {
 			int32 index = 1;
